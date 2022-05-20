@@ -24,11 +24,91 @@ Acomodar los estilos
 /* Box sizing*/
 *{
     box-sizing: border-box;
+    margin:0;
     padding:0;
 }
 
 /* Fuentes */
 html{
-    font-size:62.5%; /*Poder trabajar con r.e.m Medida relativa en fuentes*/
+    font-size:62.5%; /*Poder trabajar con rem Medida relativa en fuentes*/
     font-family: "DM Sans", sans-serif;
+}
+
+header {
+    background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
+    display: flex;
+    flex-direction: column;
+    height: 334px;
+    justify-content: center;
+    min-width: 320px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+      
+    
+}
+header img {
+    align-self:center; /*CENTRAR UN ELEMENTO*/
+    height: 24px;
+    margin-top: 60px;
+    width: 150px;
+       
+}
+.header--title-container {
+    align-self: center; /*Self se utiliza cuando el contenedor padre esta con display flex*/
+    height: 218px;
+    max-width: 900px;
+    margin-top: 50px;
+    min-width: 288px;
+    text-align: center;
+    width: 90%;
+    
+
+}
+.header--title-container h1 {
+    color: var(--just-white);
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 26px; /*La altura de la fuente que le doy a mi texto*/
+    
+}
+.header--title-container p {
+    margin-top: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: var(--soft-orange)
+}
+
+/*Botón Flotante: Botón que se encuentra entre dos contenedores*/
+
+.header--title-container .header--button{
+    position: absolute; /*Absolute puedo utilizar bottom, top, left y right para mover en esas posiciones para mover mi elemento*/
+    left: calc(50% - 118px); /*Calc es de calcular y agregar ciertos estilos especiales de posicion.*/
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding:15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    /*Sombra*/
+    box-shadow: 0px 4px 8px rgba(89,73,30, 0.16);
+    border:none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+    
+}
+
+.header--button span {
+    display: inline-block;
+    width: 13px;
+    height: 18px;
+    margin-left: 10px;
+    background-image: url('./assets/icons/down-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
