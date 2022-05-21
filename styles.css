@@ -83,7 +83,10 @@ header img {
 /*Botón Flotante: Botón que se encuentra entre dos contenedores*/
 
 .header--title-container .header--button{
-    position: absolute; /*Absolute puedo utilizar bottom, top, left y right para mover en esas posiciones para mover mi elemento*/
+    /*Abosute poderse reposicionar en cualquier parte de su padre principal(header) 
+    A pesar de que exitan mas elementos*/
+    position: absolute; /*Absolute puedo utilizar bottom, top, left y right para mover 
+    en esas posiciones para mover mi elemento*/
     left: calc(50% - 118px); /*Calc es de calcular y agregar ciertos estilos especiales de posicion.*/
     top: 270px;
     display: block;
@@ -111,4 +114,23 @@ header img {
     background-image: url('./assets/icons/down-arrow.svg');
     background-repeat: no-repeat;
     background-position: center;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+}
+.main-exchange-container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.main-exchange-container--title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;/*Centra Automaticamente el texto poniendo margenes right y left auto*/
 }
